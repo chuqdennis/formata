@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+    <div></div>
+</header>
+<div class="fa-0" id="myWizard">
+    <div class="fa-1">
+        <div class="fa-2">
+<!--form navigation bar: this is actually displayed at the bottom of the form areas.-->
+            <div class="form-nav">
+                <div style="padding:0;">
+                    <div class="next">
+                        <button type="submit"><span>Next</span></button>
+                    </div>
+                </div>
+            </div>
+<!--form title: you can edit to whatever you wanna call it.-->
+            <div class="fa-3-head">
+                <div style="font-size:16px; font-weight:900; text-align:center; color:#333; margin-top:15px;">Wedding Photo Quote</div>
+                <div style="position:relative; margin-left:20px; margin-top:15px;"></div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="5" style="width: 0%;"></div>
+                </div>
+            </div>
+            <div class="fa-3-body">
+                <div style="height:100%;">
+                    <div style="height:calc(100% - 73px); overflow-y:auto; overflow-x:hidden;">
+                        <div style="margin-bottom:20px; overflow:auto;">
+                            <div style="text-align:left;font-weight:500;padding-top:20px;padding-left:20px;">Which side of the family are you hiring for?</div>
+                        </div>
+                        <div style="box-sizing:content-box; width:100%;">
+                            <form name="singleSelectForm" style="width:100%;" >
+                                <ul class="formata">
+                                    <li>
+                                        <label>
+                                            <input type="radio" name="singleSelectRadio" value="1">
+                                            <span>Bride side</span>
+                                            <div></div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" name="singleSelectRadio" value="1">
+                                            <span>Groom side</span>
+                                            <div></div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" name="singleSelectRadio" value="1">
+                                            <span>Both sides (recommended)</span>
+                                            <div></div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="lib/jquery/jquery-3.1.1.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
