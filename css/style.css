@@ -1,3 +1,90 @@
 body {
+    position: relative;
+    height:100%;
     margin: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing:border-box;
+    display:block;
+}
+
+header {
+    color:#333; /*this color is only necessary if you want it to affect the contents that will be in the header, bootstrap has already set page color anyway but i left it because i dont know what the hell you need it for*/
+    /*margin:0 auto; you dont need this since the width is 100%*/
+    /*padding:0; you dont really need this because you have any content in the header yet*/
+    max-width:100%; /*width is 100% so why do you need this*/
+    /*border:0; not necessary please since there is no existing border you want to override*/
+    background:#fff;
+    box-shadow:0 0 4px rgba(0,0,0,.14),0 0 8px rgba(0,0,0,.2);
+    position:fixed;
+    width:100%;
+    top:0;
+    height:50px;
+    z-index:1000; /*1000 is enough oga*/
+}
+
+.main-content {
+    background-color:#f2f2f2;
+    padding: 60px 0;
+}
+
+#myWizard {
+    position:relative;
+    border:1px solid #ccc;
+    border-radius:2px;
+    width:40%;
+    min-width:540px;
+    padding: 0;
+    background-color:#f7f7f7;
+}
+
+.progress {
+    border-radius: 0;
+    margin-bottom: 0;
+    box-shadow: none;
+    height:6px;
+    background-color: #ddd;
+}
+
+.progress-bar-success {
+    background-color:#2e71f0;
+}
+
+.head {
+    border-bottom:1px solid #ccc;
+}
+
+.title {
+    font-size:16px;
+    font-weight:900;
+    text-align:center;
+    padding: 40px 15px;
+}
+
+.tab-content {
+
+}
+
+.tab-pane .well {
+    border-radius: 0;
+    border: 0 none;
+    border-bottom:1px solid #ccc;
+    background-color:#fff;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+.foot {
+    padding: 19px;
+}
+
+/* two classes can share the same rule */
+.next, .submit, .next:hover, .submit:hover, .next:focus, .submit:focus {
+    width:120px;
+    height:42px;
+    border:0 none;
+    border-radius:2px;
+    background-color:#2e71f0;
+    float:right;
+    font-size:14px;
+    color:#fff;
 }

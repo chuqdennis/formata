@@ -19,7 +19,14 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 });
 
 $('.submit').click(function(){
-    //$('#myWizard a:first').tab('show')
     alert('submit form');
+
+    $.ajax({
+        url: '',
+        type: 'post',
+        dataType: 'html',
+        beforeSend: function(){},
+        success: function(data){}
+    });
     return false;
 });
