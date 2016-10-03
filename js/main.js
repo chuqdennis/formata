@@ -1,5 +1,5 @@
 /**
- * Created by Kemis3 on 9/30/16.
+ * Created by apple on 9/30/16.
  */
 
 $('.next').click(function(){
