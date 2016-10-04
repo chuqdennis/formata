@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Form</title>
-    <!-- if you need lato font in your css, the you must import it. Its hosted in fonts.google.com -->
+    <!--lato font for that feel of awesomeness hosted in fonts.google.com-->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-    <!-- please dont edit your boostrap.min.css file, rather write your own css in the style.css to override any css you want to change. PS: i downloaded a new bootstrap.min.css because you adulterated the old one, thanks! -->
+    <!--please don't edit your boostrap.min.css file, rather write your own css in the style.css to override any css you want to change. thanks!-->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-    <!-- this is your own custom stylesheet, write into it and leave the bootstrap file alone, please I'm literally begging you -->
+    <!--this is your own custom stylesheet, write into it and leave the bootstrap css file alone-->
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -24,13 +24,13 @@
             <div class="head">
                 <div class="title">Wedding Photo Quote</div>
                 <div class="progress">
-                    <!-- you change the "aria-valuemax" value depending on the number of tabs existing -->
+                    <!--change the "aria-valuemax" value depending on the number of tabs/steps to complete form-->
                     <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="5" style="width: 0%;"></div>
                 </div>
             </div>
 
-            <!-- this is a tabbed content so that javascript can navigate across the form easily. you removed the whole thing, you should have styled your page using the existing html and not trying to bring in your own html and there is a button for each tab -->
-            <!-- add more tabs in the "navbar" side with <li>new tab</li> and "tab-content" side -->
+            <!--this is a tabbed (form) content so that javascript can navigate across the form easily.-->
+            <!--add more tabs in the "navbar" side with <li>new tab</li> and "tab-content" side-->
 
             <!-- this part is hidden and not deleted so as to preserve the tabs and keep it from breaking -->
             <div class="navbar hide">
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <div class="foot clearfix">
-                        <a class="btn btn-default btn-lg next" href="#">Continue</a>
+                        <a class="btn btn-default btn-lg next" href="#">Continue  <span class="glyphicon glyphicon-chevron-right"></span></a>
                     </div>
                 </div>
 
@@ -85,70 +85,77 @@
                         </div>
                     </div>
                     <div class="foot clearfix">
-                        <a class="btn btn-default btn-lg next" href="#">Continue</a>
+                        <a class="btn btn-default btn-lg prev" href="#"><span class="glyphicon glyphicon-chevron-left"></span>  Back</a>
+                        <a class="btn btn-default btn-lg next" href="#">Continue  <span class="glyphicon glyphicon-chevron-right"></span></a>
                     </div>
                 </div>
 
                 <!-- tab 3 -->
                 <div class="tab-pane fade" id="step3">
                     <div class="well">
-                        <label>What style(s) of photography do you want for wedding function(s)?</label>
+                        <label>Do you require video coverage?</label>
                         <div>
                             <div class="radio">
-                                <label><input type="radio" name="photographyStyle" value="Candid + Traditional"> Candid + Traditional photography (Recommended)</label>
+                                <label><input type="radio" name="videographyStyle" value="Traditional"> Traditional video</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="photographyStyle" value="Candid"> Candid photography only</label>
+                                <label><input type="radio" name="videographyStyle" value="Cinematic"> Cinematic/Motion video</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="photographyStyle" value="Traditional"> Traditional photography</label>
+                                <label><input type="radio" name="videographyStyle" value="Traditional + Cinematic"> Both cinematic and traditional video</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="videographyStyle" value="No"> I don't want video coverage</label>
                             </div>
                         </div>
                     </div>
                     <div class="foot clearfix">
-                        <a class="btn btn-default btn-lg next" href="#">Continue</a>
+                        <a class="btn btn-default btn-lg prev" href="#"><span class="glyphicon glyphicon-chevron-left"></span>  Back</a>
+                        <a class="btn btn-default btn-lg next" href="#">Continue  <span class="glyphicon glyphicon-chevron-right"></span></a>
                     </div>
                 </div>
 
                 <!-- tab 4 -->
                 <div class="tab-pane fade" id="step4">
                     <div class="well">
-                        <label>What style(s) of photography do you want for wedding function(s)?</label>
+                        <label>What kind of events do you want to cover?</label>
                         <div>
-                            <div class="radio">
-                                <label><input type="radio" name="photographyStyle" value="Candid + Traditional"> Candid + Traditional photography (Recommended)</label>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="kindOfEvent" value="Prenup"> Prenuptial</label>
                             </div>
-                            <div class="radio">
-                                <label><input type="radio" name="photographyStyle" value="Candid"> Candid photography only</label>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="kindOfEvent" value="Engagement"> Engagement</label>
                             </div>
-                            <div class="radio">
-                                <label><input type="radio" name="photographyStyle" value="Traditional"> Traditional photography</label>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="kindOfEvent" value="Traditional"> Traditional wedding</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="kindOfEvent" value="Wedding"> White wedding</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="kindOfEvent" value="Reception"> Reception</label>
                             </div>
                         </div>
                     </div>
                     <div class="foot clearfix">
-                        <a class="btn btn-default btn-lg next" href="#">Continue</a>
+                        <a class="btn btn-default btn-lg prev" href="#"><span class="glyphicon glyphicon-chevron-left"></span>  Back</a>
+                        <a class="btn btn-default btn-lg next" href="#">Continue  <span class="glyphicon glyphicon-chevron-right"></span></a>
                     </div>
                 </div>
 
                 <!-- tab 5 -->
                 <div class="tab-pane fade" id="step5">
                     <div class="well">
-                        <label>What style(s) of photography do you want for wedding function(s)?</label>
+                        <label>Is there anything else you would like the photographer to know ?</label>
                         <div>
-                            <div class="radio">
-                                <label><input type="radio" name="photographyStyle" value="Candid + Traditional"> Candid + Traditional photography (Recommended)</label>
-                            </div>
-                            <div class="radio">
-                                <label><input type="radio" name="photographyStyle" value="Candid"> Candid photography only</label>
-                            </div>
-                            <div class="radio">
-                                <label><input type="radio" name="photographyStyle" value="Traditional"> Traditional photography</label>
+                            <div class="form-group">
+                                <textarea name="textArea" class="form-control" rows="7" maxlength="500" placeholder="Start typing here..."> </textarea>
                             </div>
                         </div>
                     </div>
                     <div class="foot clearfix">
-                        <!-- this last one must always be the "finish" one so if you add more tabs, remember to make this tab the last one abeg, nah beg i dey beg -->
+                        <a class="btn btn-default btn-lg prev" href="#"><span class="glyphicon glyphicon-chevron-left"></span>  Back</a>
+                        <!--this last one must always be the "finish" one so if you add more tabs, REMEMBER TO MAKE THIS TAB THE LAST ONE-->
                         <button class="btn btn-success submit" type="submit">Finish</button>
                     </div>
                 </div>
